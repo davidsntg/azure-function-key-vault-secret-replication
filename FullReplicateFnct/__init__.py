@@ -6,10 +6,6 @@ from azure.core.exceptions import ResourceNotFoundError
 from azure.mgmt.resourcegraph import ResourceGraphClient
 from azure.mgmt.resourcegraph.models import QueryRequest
 
-# Rights of Managed identity on destination_key_vaults: Key Vault Secrets Officer
-# kv-cp-001-target1,kv-cp-001-target2
-# Rights of Managed identity on src_key_vault: Key Vault Reader (because Key Vault Secrets User is not enough to read tags)
-
 def main(req: func.HttpRequest) -> func.HttpResponse:
     logging.info('Python HTTP trigger function processed a request.')
 
