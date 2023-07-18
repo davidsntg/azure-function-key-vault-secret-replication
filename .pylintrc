@@ -1,0 +1,9 @@
+[BASIC]
+good-names=
+    i,
+    e,
+    logger,
+[FORMAT]
+max-line-length=240
+
+disable=broad-except
